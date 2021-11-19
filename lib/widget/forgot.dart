@@ -12,7 +12,7 @@ class _ForgotState extends State<Forgot> {
       padding: const EdgeInsets.only(top: 30, left: 50, right: 50),
       child: Container(
         alignment: Alignment.topRight,
-        height: 20,
+        height: 40,
         child: TextButton(
           onPressed: (){},
           child: Text(

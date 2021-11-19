@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_minimalist/widget/button.dart';
 import 'package:login_minimalist/widget/first.dart';
+import 'package:login_minimalist/widget/forgot.dart';
 import 'package:login_minimalist/widget/inputEmail.dart';
 import 'package:login_minimalist/widget/password.dart';
 import 'package:login_minimalist/widget/textLogin.dart';
@@ -32,6 +33,7 @@ class _LoginPageState extends State<LoginPage> {
                 ]),
                 InputEmail(),
                 PasswordInput(),
+                Forgot(),
                 ButtonLogin(),
                 FirstTime(),
               ],

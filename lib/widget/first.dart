@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_minimalist/pages/newuser.page.dart';
+import 'package:login_minimalist/pages/newuser_page.dart';
 
 class FirstTime extends StatefulWidget {
   @override
