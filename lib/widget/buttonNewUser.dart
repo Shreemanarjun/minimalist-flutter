@@ -17,7 +17,7 @@ class _ButtonNewUserState extends State<ButtonNewUser> {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: Colors.blue[300],
+              color: Colors.blue.shade300,
               blurRadius: 10.0, // has the effect of softening the shadow
               spreadRadius: 1.0, // has the effect of extending the shadow
               offset: Offset(
@@ -27,7 +27,7 @@ class _ButtonNewUserState extends State<ButtonNewUser> {
             ),
           ],
             color: Colors.white, borderRadius: BorderRadius.circular(30)),
-        child: FlatButton(
+        child: TextButton(
           onPressed: (){
             Navigator.pop(context);
           },

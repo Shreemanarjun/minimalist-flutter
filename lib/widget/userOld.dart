@@ -9,7 +9,7 @@ class UserOld extends StatelessWidget {
       child: Container(
         alignment: Alignment.topRight,
         //color: Colors.red,
-        height: 20,
+        height: 40,
         child: Row(
           children: <Widget>[
             Text(
@@ -19,19 +19,21 @@ class UserOld extends StatelessWidget {
                 color: Colors.white70,
               ),
             ),
-            FlatButton(
-              padding: EdgeInsets.all(0),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginPage()));
-              },
-              child: Text(
-                'Sing in',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoginPage()));
+                },
+                child: Text(
+                  'Sign in',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.right,
                 ),
-                textAlign: TextAlign.right,
               ),
             ),
           ],

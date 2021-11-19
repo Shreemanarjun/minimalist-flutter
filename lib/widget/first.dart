@@ -14,7 +14,7 @@ class _FirstTimeState extends State<FirstTime> {
       child: Container(
         alignment: Alignment.topRight,
         //color: Colors.red,
-        height: 20,
+        height: 40,
         child: Row(
           children: <Widget>[
             Text(
@@ -24,19 +24,22 @@ class _FirstTimeState extends State<FirstTime> {
                 color: Colors.white70,
               ),
             ),
-            FlatButton(
-              padding: EdgeInsets.all(0),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => NewUser()));
-              },
-              child: Text(
-                'Sing up',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: TextButton(
+              
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => NewUser()));
+                },
+                child: Text(
+                  'Sign up',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.right,
                 ),
-                textAlign: TextAlign.right,
               ),
             ),
           ],

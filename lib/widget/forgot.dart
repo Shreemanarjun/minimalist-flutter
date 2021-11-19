@@ -13,7 +13,7 @@ class _ForgotState extends State<Forgot> {
       child: Container(
         alignment: Alignment.topRight,
         height: 20,
-        child: FlatButton(
+        child: TextButton(
           onPressed: (){},
           child: Text(
             'Forgot Password?',
